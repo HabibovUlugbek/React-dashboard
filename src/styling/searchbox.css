@@ -1,0 +1,16 @@
+.search__box {
+    border-bottom: 1px gray solid;
+    background-color:rgb(250, 248, 248);
+    box-shadow: 5px 2px 7px grey;
+    width: 100%;
+    position: sticky;
+}
+.search__form {
+    margin: 5px;
+}
+.search__input {
+    background-color: rgb(250, 248, 248);
+    outline: none;
+    border: none;
+    border-bottom: 1px gray solid;
+}

@@ -1,0 +1,19 @@
+.navbar__wrap {
+    background-color: rgb(250, 248, 248);
+    border-right: 1px gray solid;
+}
+.menulink {
+    position: relative;
+    transition: .5s all ease-in-out;
+}
+.menulink::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 10px;
+    height: 100%;
+}
+.menulink:hover {
+    background-color: aqua;
+}

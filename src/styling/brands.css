@@ -1,0 +1,26 @@
+.brands__scroll {
+        overflow-y: scroll;
+        overscroll-behavior-y: contain;
+        scroll-snap-type: y mandatory;
+    max-height: 250px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    transform: translateX(-10px);
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    transform: translateX(10px);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    transform: translateX(10px);
+    background: rgb(75, 73, 73);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
