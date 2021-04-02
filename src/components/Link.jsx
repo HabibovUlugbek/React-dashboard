@@ -28,8 +28,10 @@ const Link = ({ data }) => {
         borderTop: ".5px gray solid",
       }}
     >
-      {Icons(data)}
-      <span className="mx-1">{data}</span>
+      <span className="link__effect p-2">
+          {Icons(data)}
+          <span className="mx-1">{data}</span>
+      </span>
     </div>
   );
 };

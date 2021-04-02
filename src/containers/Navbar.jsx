@@ -5,7 +5,7 @@ import NavLinks from './NavLinks'
 
 const Navbar = () => {
     return (
-        <div className="navbar__wrap">
+        <div style={{overflowX:"hidden"}}  className="navbar__wrap">
             <div className="">
                 <NavbarLogo />
                 <NavLinks />

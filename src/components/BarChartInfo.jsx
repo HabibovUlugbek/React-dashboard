@@ -10,9 +10,9 @@ const BarchatInfo = () => {
                 <p className="text-success m-0"><FaArrowUp /> { }200000 sum </p>
             </div>
             <div>
-                <select style={{outline:"none"}} className="px-3 py-1 btn-outline-info bg-light-gray font-weight-bolder" name="" id="">
-                    <option selected>2021</option>
-                    <option>2020</option>
+                <select defaultValue={2021} selected  style={{outline:"none"}} className="px-3 py-1 btn-outline-info bg-light-gray font-weight-bolder" name="" id="">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
                 </select>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import BarChartInfo from './BarChartInfo'
-import {  BarChart,  Bar,  Cell,  XAxis, Tooltip,  Legend,  ResponsiveContainer} from "recharts";
+import {  BarChart,  Bar,  XAxis, Tooltip,  Legend,  ResponsiveContainer} from "recharts";
 
 const data = [
   {

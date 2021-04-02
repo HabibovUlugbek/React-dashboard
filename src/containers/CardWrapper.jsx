@@ -30,8 +30,8 @@ const CardWrapper = () => {
     ]
     return (
         <div className="row p-3 m-2 justify-content-around">
-            {cardData.map(card => (
-                <Card data={card} />
+            {cardData.map((card, id) => (
+                <Card key={id} data={card} />
             ))}
         </div>
     )

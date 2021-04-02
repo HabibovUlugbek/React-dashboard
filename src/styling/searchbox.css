@@ -6,11 +6,11 @@
     position: sticky;
 }
 .search__form {
-    margin: 5px;
+    margin: 5px 5px 0;
+    border-bottom: 1px gray solid;
 }
 .search__input {
     background-color: rgb(250, 248, 248);
     outline: none;
     border: none;
-    border-bottom: 1px gray solid;
 }

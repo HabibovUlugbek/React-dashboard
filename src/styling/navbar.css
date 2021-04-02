@@ -1,6 +1,9 @@
 .navbar__wrap {
+    position: relative;
     background-color: rgb(250, 248, 248);
     border-right: 1px gray solid;
+    height: 100%;
+    width: 100%;
 }
 .menulink {
     position: relative;
@@ -16,4 +19,76 @@
 }
 .menulink:hover {
     background-color: aqua;
+}
+.link__effect {position: relative;}
+.link__effect::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.menulink:hover .link__effect::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu-btn {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 3;
+}
+ .menu-btn span {
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #222222;
+    left: 50%; margin-left: -7px;
+    top: 50%; margin-top: -1px;
+}
+.menu-btn span::after,
+.menu-btn span::before{
+    content: '';
+    display: block;
+    transition: .5s; 
+    width: 15px;
+    height: 2px;
+    background-color: #222222;
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(3px);
+}
+.menu-btn-true span {
+    height: 0;
+}
+.menu-btn-true span::before {
+    transform: rotate(45deg);
+}
+.menu-btn-true span::after {
+    transform: translateY(-2px) rotate(-45deg) ;
+}
+
+/* Responsive Navbar */
+
+.responsive {
+    position: fixed;
+    top: 68px;
+    left: -100%;
+    z-index: 3;
+    transition: all .6s cubic-bezier(0.29,-0.06, 0.43, 1.34);
+}
+.active_true {
+    left: 0;
 }

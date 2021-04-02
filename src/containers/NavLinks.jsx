@@ -11,8 +11,8 @@ const NavLinks = () => {
     return (
         <div className="row d-flex justify-content-center align-items-center ">
             <div className="col-12 text-center">
-                {links.map(link => (
-                    <Link data={link.text} />
+                {links.map((link,id) => (
+                    <Link key={id} data={link.text} />
                 ))}
             </div>
         </div>

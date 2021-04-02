@@ -1,0 +1,47 @@
+.toolbar div {
+    color: #222222;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid;
+    transition: .3s;
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    z-index: 0;
+}
+.toolbar-btn {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 3;
+    transition: .5s all ease ;
+}
+.true {
+    transform: rotate(90deg);
+}
+.toolbar div:nth-child(1) {
+    transition-delay: .1s;
+}
+.toolbar div:nth-child(2) {
+    transition-delay: .2s;
+}
+.toolbar div:nth-child(3) {
+    transition-delay: .3s;
+}
+.menu__true div:nth-child(2) {
+    transform: translate(-150%,0);
+}
+.menu__true div:nth-child(1) {
+    transform: translate(-75%,-85%);
+}
+.menu__true div:nth-child(3) {
+    transform: translate(-85%,100%);
+}
