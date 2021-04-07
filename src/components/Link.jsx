@@ -3,7 +3,7 @@ import { FaHome, FaUsers } from "react-icons/fa";
 import { FcSettings } from "react-icons/fc";
 import { IoFileTrayStackedSharp } from "react-icons/io5";
 
-const Link = ({ data }) => {
+const Links = ({ data }) => {
   const Icons = (data) => {
     switch (data) {
       case "Home":
@@ -36,4 +36,4 @@ const Link = ({ data }) => {
   );
 };
 
-export default Link;
+export default Links;

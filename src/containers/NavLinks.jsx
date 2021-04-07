@@ -1,23 +1,33 @@
-import React from 'react'
-import Link from '../components/Link'
+import React from "react";
+import { Link,BrowserRouter as Router, useHistory } from "react-router-dom";
+import Links from "../components/Link";
 
 const NavLinks = () => {
-    const links = [
-        {text:"Home"},
-        {text:"Users"},
-        {text:"Product"},
-        {text:"Settings"}
-    ]
-    return (
-        <div className="row d-flex justify-content-center align-items-center ">
-            <div className="col-12 text-center">
-                {links.map((link,id) => (
-                    <Link key={id} data={link.text} />
-                ))}
-            </div>
-        </div>
-        
-    )
-}
+  const links = [
+    { text: "Home", path: "/" },
+    { text: "Users", path: "/users" },
+    { text: "Product", path: "/product" },
+    { text: "Settings", path: "/settings" },
+  ];
 
-export default NavLinks
+  const history = useHistory()
+
+  const setHistory = link => {
+    history.push(`${link}`)
+  }
+  return (
+    <Router>
+      <div className="row d-flex justify-content-center align-items-center ">
+        <div className="col-12 text-center">
+          {links.map((link, id) => (
+            <Link  onClick={() => setHistory(link.path) } className="text-dark text-unstyle" key={id} to={link.path}>
+              <Links   data={link.text} />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </Router>
+  );
+};
+
+export default NavLinks;
