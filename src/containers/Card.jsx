@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <div className=" col-sm-5 m-2  col-12 p-2 rounded d-flex justify-content-between align-items-center" style={{
+    <div className=" col-sm-5 m-2  col-11 p-2 rounded d-flex justify-content-between align-items-center" style={{
         boxSizing:"content-box",
         boxShadow: "5px 5px 4px grey",
         background:"rgb(250, 248, 248)"}}>

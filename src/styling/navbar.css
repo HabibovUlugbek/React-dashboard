@@ -2,7 +2,7 @@
     position: relative;
     background-color: rgb(250, 248, 248);
     border-right: 1px gray solid;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 .menulink {
